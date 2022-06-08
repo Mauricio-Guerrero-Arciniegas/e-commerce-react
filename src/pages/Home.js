@@ -50,8 +50,8 @@ const Home = () => {
           <Col>
             <InputGroup className="mb-3">
               <FormControl
-                placeholder="Recipient's username"
-                aria-label="Recipient's username"
+                placeholder="Search by Category"
+                aria-label="Search by Category"
                 aria-describedby="basic-addon2"
                 onChange={e => setSearch(e.target.value)}
                 value={search}
