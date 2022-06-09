@@ -14,6 +14,7 @@ const Home = () => {
   const [ categories, setCategories ] = useState([]);
 
   const products = useSelector((state) => state.products);
+  
 
   useEffect(() => {
     dispatch(getProducts());
@@ -70,7 +71,7 @@ const Home = () => {
                     <Card.Img variant="top" src={productsItem.productImgs[0]} />
                     <Card.Body>
                       <Card.Title>{productsItem.title}</Card.Title>
-                      <Card.Text>{productsItem.description}</Card.Text>
+                      <Card.Text>{productsItem.price}</Card.Text>
                     </Card.Body>
                   </Card>
                 </Col>

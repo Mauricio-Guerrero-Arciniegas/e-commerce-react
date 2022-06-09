@@ -32,14 +32,18 @@ const ProductsDetail = () => {
 
     return (
 
-
-        <div>
+      
+      
+      <div>
+          <h1>Detail</h1>
                 <Card 
                     style={{ cursor: "pointer" }}>
                     <Card.Img variant="top" src={product.productImgs} className="fluid-img"/>
                     <Card.Body>
                       <Card.Title>{product.title}</Card.Title>
                       <Card.Text>{product.description}</Card.Text>
+                      <Card.Text>{products.price}</Card.Text>
+                      
                     </Card.Body>
                   </Card>
 
@@ -57,7 +61,8 @@ const ProductsDetail = () => {
                     <Card.Img variant="top" src={productsItem.productImgs} width="10px" />
                     <Card.Body>
                       <Card.Title>{productsItem.title}</Card.Title>
-                      <Card.Text>wefwegwe</Card.Text>
+                      <Card.Text>{productsItem.price}</Card.Text>
+                      
                     </Card.Body>
                   </Card>
                 </Col>

@@ -24,21 +24,21 @@ const Login = () => {
                         alert("Credenciales incorrectas")
                     }
                 })
-        console.log(data)
+        
     }
 
 
   return (
-    <div className="d-flex ">
+    <div className="main">
         <Card style={{maxWidth:"500px"}} className="mx-auto">
-            <Card.Body>
-        <h1>Login</h1>
+            <Card.Body className="cardbody">
+        <h2 className="welcome">Welcome ! Enter your email and <br></br> password to continue</h2>
                 <Form onSubmit={handleSubmit(submit)}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
+                    <Form.Label>Email</Form.Label>
                     <Form.Control {...register("email")} type="email" placeholder="Enter email" />
                     <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
+                       
                     </Form.Text>
                     </Form.Group>
 
@@ -46,11 +46,9 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control {...register("password")} type="password" placeholder="Password" />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                    </Form.Group>
-                    <Button variant="primary" type="submit">
-                    Submit
+                   
+                    <Button className="loginbutton" type="submit">
+                    Login
                     </Button>
                 </Form>
 
